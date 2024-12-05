@@ -1,10 +1,14 @@
 /* Announcement Bar */
 .announcement-bar {
-  background-color: #2e4f7ea3 !important;
-  position: absolute;
-  width: 100%;
+  background-color: #2e4f7ea3 !important; /* Semi-transparent background */
+  position: fixed; /* Keeps the bar at the top, even when scrolling */
+  top: 0; /* Positions it at the very top */
+  width: 100%; /* Full width */
+  z-index: 10000; /* Higher than the navbar */
   color: #ffffff;
   font-size: 0.9rem;
+  text-align: center; /* Center the text content */
+  padding: 5px 0; /* Optional: Adds vertical padding */
 }
 
 .announcement-bar i {
@@ -13,38 +17,37 @@
 
 @media (max-width: 768px) {
   .announcement-bar {
-    overflow-x: auto; /* Enables horizontal scrolling */
-    scrollbar-width: none; /* Hides scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
-}
+      overflow-x: auto; /* Enables horizontal scrolling */
+      scrollbar-width: none; /* Hides scrollbar in Firefox */
+      -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
+  }
 
-.announcement-bar::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in WebKit browsers like Chrome, Safari */
-}
+  .announcement-bar::-webkit-scrollbar {
+      display: none; /* Hides scrollbar in WebKit browsers like Chrome, Safari */
+  }
 
   .announcement-content {
-    white-space: nowrap;
-    /* Prevents wrapping on small screens */
-    display: inline-flex;
-    /* Ensures content stays inline for horizontal scroll */
-    width: max-content;
-    /* Only takes up as much width as needed */
-    flex-direction: row !important;
+      white-space: nowrap; /* Prevents wrapping on small screens */
+      display: inline-flex; /* Ensures content stays inline for horizontal scroll */
+      width: max-content; /* Only takes up as much width as needed */
+      flex-direction: row !important;
   }
 
   /* Optional: add padding for spacing */
   .announcement-bar span {
-    padding-right: 10px;
+      padding-right: 10px;
   }
 }
 
 
 /* Navbar */
 .navbar {
-  top: 41px;
-  background-color: #334b7aa3 !important;
-  position: absolute;
-  width: 100%;
+  margin-top: 41px;
+  background-color: #334b7aa3 !important; /* Semi-transparent background */
+  position: fixed; /* Make the navbar stay at the top while scrolling */
+  z-index: 9999; /* Ensure it is above all other elements */
+  width: 100%; /* Span the full width of the screen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
 
 .navbar-brand img {
@@ -63,6 +66,7 @@
   padding: 5px 20px;
   font-weight: 600;
 }
+
 
 /* Hero Section */
 .hero-section {
