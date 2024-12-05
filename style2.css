@@ -1,0 +1,117 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.timetable-container {
+    width: 90%;
+    max-width: 900px;
+    background: linear-gradient(135deg, #f8f0e5, #ffffff);
+     border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.timetable-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.timetable-title {
+    font-size: 32px;
+    color: #b6862c;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Georgia', serif;
+}
+
+.payer-times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.payer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.payer-time {
+    flex: 1;
+    min-width: 120px;
+    margin: 10px;
+    text-align: center;
+}
+
+.payer-time h2 {
+    font-size: 18px;
+    color: #b6862c;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+button {
+    background: #ffffff;
+    border: none;
+    color: #ffcc66;
+    border-radius: 8px;
+    font-size: 16px;
+    /* color: rgb(0, 0, 0); */
+    padding: 8px 15px;
+    font-family: 'Tahoma', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+}
+
+button:hover {
+    background: #ffffff;
+    border-color: #b6862c;
+    color: #ffcc66;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px #b6862c;
+}
+
+button:before {
+    content: '﷽';
+    font-family: 'Georgia', serif;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #046307;
+    opacity: 0.7;
+}

@@ -390,7 +390,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
         line-height: 1.6;
     }
 
-    /* Button Styles */
+    /* .Button2 Styles */
     .btn-watch{
       display: inline-flex;
       align-items: center;
@@ -841,4 +841,219 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
   margin-top: 0px;
   margin-left: 10px;
 }
+}
+
+
+
+.waqt-section {
+  width: 100%;
+  max-width: 900px;
+  /* background: linear-gradient(135deg, #f8f0e5, #ffffff); */
+  /* border: 5px solid #b6862c; */
+  border-radius: 20px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.waqt-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: url('https://www.transparenttextures.com/patterns/arabesque.png'); */
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.waqt-title {
+  font-size: 32px;
+  color: #b6862c;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Georgia', serif;
+}
+
+.waqt-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.waqt-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.waqt-time {
+  flex: 1;
+  min-width: 120px;
+  margin: 10px;
+  text-align: center;
+  max-width: 150px;
+}
+
+.waqt-time h2 {
+  font-size: 18px;
+  color: #046307;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.button2 {
+  background: #ffffff;
+  border: none;
+  color: #ffcc66;
+  border-radius: 8px;
+  font-size: 16px;
+  /* color: rgb(0, 0, 0); */
+  padding: 8px 15px;
+  font-family: 'Tahoma', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button2:hover {
+  background: #ffffff;
+  border-color: #b6862c;
+  color: #ffcc66;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button2:focus {
+  outline: none;
+  box-shadow: 0 0 10px 3px #b6862c;
+}
+
+.button2:before {
+  content: '﷽';
+  font-family: 'Georgia', serif;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #046307;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .waqt-row {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .waqt-time {
+      max-width: 100%;
+      margin-bottom: 15px;
+  }
+
+  .waqt-title {
+      font-size: 28px;
+  }
+
+  .button2 {
+      font-size: 14px;
+      padding: 6px 12px;
+  }
+}
+
+
+/* Section for Next Prayer Time */
+.waqt-next-section {
+  width: 100%;
+  max-width: 800px;
+  background: linear-gradient(135deg, #f8f0e5, #ffffff);
+  border: 2px solid #b6862c;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.waqt-next-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.waqt-next-title {
+  font-size: 28px;
+  color: #b6862c;
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Georgia', serif;
+}
+
+.waqt-timer {
+  font-size: 20px;
+  color: #046307;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b6862c;
+}
+
+.waqt-quote {
+  font-size: 16px;
+  color: #046307;
+  font-family: 'Tahoma', sans-serif;
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 204, 102, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .waqt-next-title {
+      font-size: 24px;
+  }
+
+  .waqt-timer {
+      font-size: 18px;
+  }
+
+  #timer {
+      font-size: 20px;
+  }
+
+  .waqt-quote {
+      font-size: 14px;
+  }
 }
