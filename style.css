@@ -1442,8 +1442,9 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .floating-icon {
-      padding: 20px;
-      top: 600px;
+      padding: 10px;
+      top: 580px;
+      margin-right: 5px;
   }
 
   #prayer-time {
