@@ -1005,10 +1005,9 @@
   }
 
   .waqt-time {
-    flex: 1 1 calc(50% - 20px); /* On mobile, two items per row */
-    max-width: calc(50% - 20px); /* Ensure no item exceeds half the width */
-}
-}
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
 
   .waqt-title {
     font-size: 28px;
