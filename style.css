@@ -1436,13 +1436,14 @@
 #prayer-time {
   font-size: 16px;
   font-weight: 600;
-  top: 600px;
+  
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .floating-icon {
       padding: 20px;
+      top: 600px;
   }
 
   #prayer-time {
