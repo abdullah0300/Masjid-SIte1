@@ -67,6 +67,11 @@
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    margin-top: 49px;
+  }
+}
 
 /* Hero Section */
 .hero-section {
@@ -1092,6 +1097,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  
   .waqt-next-section {
     border: none;
   }
