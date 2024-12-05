@@ -1441,7 +1441,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .floating-icon {
-      padding: 10px;
+      padding: 20px;
   }
 
   #prayer-time {
