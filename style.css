@@ -13,457 +13,483 @@
 
 @media (max-width: 768px) {
   .announcement-bar {
-      overflow-x: auto; /* Enables horizontal scrolling on small screens */
-  }
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
+}
+
+.announcement-bar::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in WebKit browsers like Chrome, Safari */
+}
 
   .announcement-content {
-      white-space: nowrap; /* Prevents wrapping on small screens */
-      display: inline-flex; /* Ensures content stays inline for horizontal scroll */
-      width: max-content; /* Only takes up as much width as needed */
-      flex-direction: row !important;
+    white-space: nowrap;
+    /* Prevents wrapping on small screens */
+    display: inline-flex;
+    /* Ensures content stays inline for horizontal scroll */
+    width: max-content;
+    /* Only takes up as much width as needed */
+    flex-direction: row !important;
   }
 
   /* Optional: add padding for spacing */
   .announcement-bar span {
-      padding-right: 10px;
+    padding-right: 10px;
   }
 }
 
 
 /* Navbar */
 .navbar {
-  top:41px;
-    background-color: #334b7aa3 !important;
-    position: absolute;
-    width: 100%;
+  top: 41px;
+  background-color: #334b7aa3 !important;
+  position: absolute;
+  width: 100%;
 }
 
 .navbar-brand img {
-    height: 40px;
+  height: 40px;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff !important;
-    font-weight: 500;
-    margin-right: 15px;
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-right: 15px;
 }
 
 .navbar-nav .btn-warning {
-    background-color: #D2973B;
-    border: none;
-    padding: 5px 20px;
-    font-weight: 600;
+  background-color: #D2973B;
+  border: none;
+  padding: 5px 20px;
+  font-weight: 600;
 }
 
 /* Hero Section */
 .hero-section {
-    background-image: url('./media/masjid.jpg'); /* Replace with actual file name */
-    background-size: cover;
-    background-position: center;
-    height: 600px; 
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background-image: url('./media/masjid.jpg');
+  /* Replace with actual file name */
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.sub-hero-image img{
-  top:220px;
+.sub-hero-image img {
+  top: 220px;
   position: absolute;
   left: 95px;
   width: 30%;
 }
 
 .hero-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .hero-section p {
-    color: #555;
-    margin-bottom: 20px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .hero-section .btn-warning {
-    background-color: #D2973B;
-    border: none;
-    font-size: 1rem;
+  background-color: #D2973B;
+  border: none;
+  font-size: 1rem;
 }
 
 
 /* 2nd section */
 
 
-    /* Custom styles */
+/* Custom styles */
 
-    .prayer-name img {
-      width: 25px;
-      height: 25px;
-    }
+.prayer-name img {
+  width: 25px;
+  height: 25px;
+}
 
 
 
-    .prayer-section {
-        padding: 40px 20px;
-        background-color: #fff;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-      }
-      .align-items-center{
-        justify-content: space-between;
-      }
-  
-      .card-intro {
-        padding: 20px;
-        border-radius: 8px;
-      
-      }
-  
-      .intro-title {
-        color: #34a853; /* Custom green color */
-        font-weight: bold;
-        font-size: 1.5rem;
-      }
-  
-      .intro-subtitle {
-        font-weight: bold;
-        font-size: 1.25rem;
-      }
-  
-      .intro-text {
-        font-size: 1.1rem;
-        color: #555;
-        line-height: 1.5;
-      }
-  
-      .read-more-btn {
-        background-color: #f4a261;
-        color: #fff;
-        border: none;
-        padding: 8px 20px;
-        border-radius: 4px;
-        font-weight: bold;
-      }
-  
-      .read-more-btn:hover {
-        background-color: #e76f51;
-        color: #fff;
-      }
-  
-      .prayer-timings-card {
-        padding: 20px;
-        border-radius: 8px;
-      }
-  
-      .prayer-table {
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 20px;
-    }
+.prayer-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-    .prayer-table .header {
-        font-weight: bold;
-        font-size: 1rem;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .intro-section{
-      margin-bottom: 20px;
-    }
+.align-items-center {
+  justify-content: space-between;
+}
 
-    .prayer-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 6px 15px;
-        border-radius: 8px;
-    }
-    .praying-header{
-      width: 50%;
-    }
-    .header img {
-      width: 30px;
-      height: auto;
-      margin-bottom: 5px;
-  }
- .prayer-section-title{
+.card-intro {
+  padding: 20px;
+  border-radius: 8px;
+
+}
+
+.intro-title {
+  color: #34a853;
+  /* Custom green color */
   font-weight: bold;
-    font-size: 1.5rem;
-    margin: 17px 0;
- }
-    .prayer-name,
-    .prayer-time {
-      width: 45%;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      font-size: 0.9rem;
-      font-weight: 500;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
+  font-size: 1.5rem;
+}
 
-    .prayer-name i,
-    .prayer-time i {
-        color: #D2973B;
-        margin-right: 8px;
-        font-size: 1.2rem;
-    }
+.intro-subtitle {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.read-more-btn {
+  background-color: #f4a261;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.read-more-btn:hover {
+  background-color: #e76f51;
+  color: #fff;
+}
+
+.prayer-timings-card {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.prayer-table {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.prayer-table .header {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-section {
+  margin-bottom: 20px;
+}
+
+.prayer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 15px;
+  border-radius: 8px;
+}
+
+.praying-header {
+  width: 50%;
+}
+
+.header img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.prayer-section-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 17px 0;
+}
+
+.prayer-name,
+.prayer-time {
+  width: 45%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.prayer-name i,
+.prayer-time i {
+  color: #D2973B;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
 
 
-      /* 3rd section  */
+/* 3rd section  */
 
-      .pillars-title {
-        color: #35a574;
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 40px;
-      }
-      
-      .pillars-card {
-        margin: 20px 10px;
-        padding: 0;
-      }
-      
-      .pillars-card-content {
-        background-color: #fff;
-        border-radius: 16px;
-        border-radius: 110px 100px 100px 0px;
-        border: 1px solid #ddd;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        overflow: hidden;
-      }
-      
-      .pillars-icon {
-        position: absolute;
-top: 0px;
-left: 20%;
-transform: translateX(-50%);
-background-color: #fff;
-color: #d4af37;
-font-size: 19px;
-font-weight: bold;
-border-radius: 50%;
-padding: 10px;
-width: 75px;
-height: 75px;
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
-            inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Inner shadow */
-      }
-      
-      .pillars-image-wrapper {
-        width: 100%;
-      }
-      
-      .pillars-image {
-        object-fit: cover;
-        width: 220px;
-        height: 280px;
-        border-radius: 100px 0px 100px 0px;
-      }
-      
-      .pillars-card-title {
-        color: #333;
-        font-size: 18px;
-        margin-top: 15px;
-      }
-      
-      .pillars-card-subtitle {
-        color: #777;
-        font-size: 14px;
-        margin-top: 5px;
-      }
+.pillars-title {
+  color: #35a574;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.pillars-card {
+  margin: 20px 10px;
+  padding: 0;
+}
+
+.pillars-card-content {
+  background-color: #fff;
+  border-radius: 16px;
+  border-radius: 110px 100px 100px 0px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.pillars-icon {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #d4af37;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 10px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
+    /* Outer shadow */
+    inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Inner shadow */
+}
+
+.pillars-image-wrapper {
+  width: 100%;
+}
+
+.pillars-image {
+  object-fit: cover;
+  width: 220px;
+  height: 280px;
+  border-radius: 100px 0px 100px 0px;
+}
+
+.pillars-card-title {
+  color: #333;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.pillars-card-subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+}
 
 
-      /* section 4th */
+/* section 4th */
 
-      .offer-section {
-        text-align: center;
-        padding: 60px 0;
-    }
+.offer-section {
+  text-align: center;
+  padding: 60px 0;
+}
 
-    .offer-section h2 {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
+.offer-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
-    .offer-section p {
-        font-size: 1rem;
-        color: #555;
-        max-width: 700px;
-        margin: 0 auto 40px auto;
-        line-height: 1.6;
-    }
+.offer-section p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
 
-    /* Card Styling */
-    .offer-card {
-        border: none;
-        border-top-left-radius: 200px;
-        border-top-right-radius: 200px;
-        overflow: hidden;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
+/* Card Styling */
+.offer-card {
+  border: none;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-    .offer-card:hover {
-        transform: translateY(-5px);
-    }
+.offer-card:hover {
+  transform: translateY(-5px);
+}
 
-    .offer-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-top-left-radius: 200px;
-        border-top-right-radius: 200px;
-    }
+.offer-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
 
-    .card-body {
-        padding: 20px;
-        height: 220px;
-    }
+.card-body {
+  padding: 20px;
+  height: 220px;
+}
 
-    .card-title {
-      font-size: 1rem;
-      font-weight: bold;
-      color: #333;
-      white-space: nowrap;       /* Prevents text from wrapping to a new line */
-      overflow: hidden;          /* Hides any overflow content */
-      text-overflow: ellipsis;   /* Displays '...' for overflow text */
-  }
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  /* Prevents text from wrapping to a new line */
+  overflow: hidden;
+  /* Hides any overflow content */
+  text-overflow: ellipsis;
+  /* Displays '...' for overflow text */
+}
 
-    .card-text {
-        color: #777;
-        margin: 10px 0;
-        font-size: 0.9rem;
-    }
+.card-text {
+  color: #777;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
 
-    .learn-more-btn {
-        display: inline-block;
-        background-color: #D2973B;
-        color: white;
-        padding: 10px 20px;
-        font-size: 0.9rem;
-        font-weight: bold;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
+.learn-more-btn {
+  display: inline-block;
+  background-color: #D2973B;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
 
-    .learn-more-btn:hover {
-        background-color: #D2973B;
-    }
+.learn-more-btn:hover {
+  background-color: #D2973B;
+}
 
-    .card-icon {
-        font-size: 1rem;
-        color: #D2973B;
-        margin-right: 5px;
-    }
+.card-icon {
+  font-size: 1rem;
+  color: #D2973B;
+  margin-right: 5px;
+}
 
-      /* section 5th */
+/* section 5th */
 
-      .khutba-section {
-        padding: 40px 0;
-    }
+.khutba-section {
+  padding: 40px 0;
+}
 
-    .khutba-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #333;
-    }
+.khutba-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
 
-    .khutba-timing {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #0c9a4a;
-        margin-top: 10px;
-    }
+.khutba-timing {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0c9a4a;
+  margin-top: 10px;
+}
 
-    .khutba-text {
-        font-size: 0.9rem;
-        color: #555;
-        margin-top: 15px;
-        line-height: 1.6;
-    }
+.khutba-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 15px;
+  line-height: 1.6;
+}
 
-    /* .Button2 Styles */
-    .btn-watch{
-      display: inline-flex;
-      align-items: center;
-      padding: 10px 20px 10px 40px;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: white;
-      margin-top: 0px;
-      margin-right: 10px;
-    }
-.play-button{
+/* .Button2 Styles */
+.btn-watch {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px 10px 40px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.play-button {
   transform: translate(-58px, 2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    background: #fff;
-    padding: 12px 3px 12px 12px;
-    border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  background: #fff;
+  padding: 12px 3px 12px 12px;
+  border-radius: 50%;
 }
 
 
 
 
-    .btn-question {
-      background-color: #D2973B!important ;
+.btn-question {
+  background-color: #D2973B !important;
 
-      transform: translate(4px, 5px);
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 10px 10px 13px;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: white;
-      margin-top: 19px;
-      margin-right: 10px;
-  }
-    .btn-watch img {
-      margin-right: 5px;
-      width: 35px;
-      height: 35px;
-    }
-    .btn-question img {
-      margin-right: 5px;
-      width: 25px;
-      height: 25px;
-    }
+  transform: translate(4px, 5px);
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px 10px 13px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 19px;
+  margin-right: 10px;
+}
 
-    .btn-watch {
-        background-color: #D2973B;
-    }
+.btn-watch img {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+}
 
-    .btn-question {
-        background-color: #d4a017;
-    }
+.btn-question img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
 
-    .btn-watch i,
-    .btn-question i {
-        margin-right: 8px;
-    }
+.btn-watch {
+  background-color: #D2973B;
+}
 
-    /* Image Styling */
-    .image-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.btn-question {
+  background-color: #d4a017;
+}
 
-    .large-image {
-      width: 100%;
-      height: auto;
-      max-width: 400px;
-    }
+.btn-watch i,
+.btn-question i {
+  margin-right: 8px;
+}
+
+/* Image Styling */
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
 /* section 6th */
 .our-aim-section {
   padding: 40px 0;
@@ -487,360 +513,381 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
   line-height: 1.6;
   color: #555;
 }
-    /* section 7th */
 
-        /* Background Section */
-        .donation-section {
-          position: relative;
-          background-image: url('./media/mathilde-cureau-mgZF6CZ0c9Q-unsplash.jpg'); /* Replace with actual image path */
-          background-size: cover;
-          background-position: center;
-          padding: 60px 0;
-          color: white;
-          height: 400px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-      }
+/* section 7th */
 
-      /* Overlay */
-      .donation-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      /* Text Content */
-      .donation-text {
-        position: relative;
-        z-index: 2;
-        max-width: 50%;
-        padding-left: 50px;
-      }
-
-      .donation-text h2 {
-          font-size: 1.5rem;
-          font-weight: bold;
-      }
-
-      .donation-text p {
-          font-size: 1rem;
-          line-height: 1.6;
-      }
-
-      /* Support Card */
-      .support-card {
-        position: absolute;
-        z-index: 2;
-        background-color: #35a085;
-        padding: 20px;
-        border-radius: 0 0px 200px 200px;
-        color: white;
-        text-align: center;
-        max-width: 278px;
-        width: 100%;
-        top: 0;
-        right: 100px;
-        height: 300px;
-      }
-
-      .support-card h4 {
-          font-size: 1.2rem;
-          margin-bottom: 20px;
-      }
-
-      /* Progress Circle */
-      .progress-circle {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-          border: 10px solid #D2973B;
-          border-right-color: transparent;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.5rem;
-          font-weight: bold;
-          margin: 0 auto 20px auto;
-          color: white;
-      }
-
-      /* Donate Button */
-      .btn-donate {
-          background-color: #D2973B;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          border-radius: 50px;
-          font-size: 1rem;
-          font-weight: bold;
-          text-decoration: none;
-      }
-
-        /* Prayer Times Section */
-        .prayer-times {
-          width: 60%;
-          transform: translate(0px, 30px);
-          background-color: #D2973B;
-          color: white;
-          text-align: center;
-          padding: 20px 0;
-          border-radius: 15px;
-          font-weight: bold;
-          font-size: 2rem;
-      }
-
-      .prayer-times .time-item {
-          display: inline-block;
-          margin: 0 15px;
-          font-size: 1rem;
-          color: #fff;
-      }
-
-      .prayer-times .time-item .time {
-          display: block;
-          font-size: 0.9rem;
-          margin-top: 5px;
-      }
-
-      /* Footer Section */
-      .footer {
-          background-color: #000;
-          color: white;
-          padding: 80px 0 40px 0;
-          font-size: 0.9rem;
-      }
-
-      .footer .footer-logo {
-          display: flex;
-          align-items: center;
-          color: white;
-          font-weight: bold;
-          font-size: 1.1rem;
-      }
-
-      .footer .footer-logo img {
-        width: 200px;
-        margin-right: 10px;
-      }
-
-      .footer .footer-text {
-        font-size: 1rem;
-          margin-top: 10px;
-          color: #cccccc;
-      }
-
-      .footer h5 {
-          color: #D2973B;
-          margin-bottom: 15px;
-          font-weight: bold;
-      }
-
-      .footer .footer-links li {
-        list-style-type: disc;
-        font-size: 1rem;
-      }
-      .footer .footer-links {
-        padding-left: 23px;
-      }
-      .footer .footer-links a {
-          color: #cccccc;
-          text-decoration: none;
-          font-weight: 500;
-      }
-
-      .footer .footer-links a:hover {
-          color: #D2973B;
-      }
-
-      .footer .social-icons a {
-          color: white;
-          font-size: 1.2rem;
-          margin-right: 15px;
-      }
-
-      .footer .social-icons a:hover {
-          color: #D2973B;
-      }
- 
-      .toggle-icon{
-        display: none;
-      }
-
-
-      @media (max-width: 768px) {
-        .toggle-icon{
-          display: block;
-        }
-        .offer-section p {
-          margin: 0 auto 20px auto;
-      }
-
-
-       .intro-section .intro-icon{
-        display:none;
-       } 
-
-       .sub-hero-image img {
-        top: 250px;
-        position: absolute;
-        left: 40px;
-        width: 80%;
-    }
-    .card-intro {
-      padding: 20px 0;
-  }
-  .prayer-name, .prayer-time {
-    padding: 10px 10px;
-}
-.offer-section .row {
-  padding: 0 40px;
+/* Background Section */
+.donation-section {
+  position: relative;
+  background-image: url('./media/mathilde-cureau-mgZF6CZ0c9Q-unsplash.jpg');
+  /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  color: white;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.khutba-section {
-  padding: 7px;
+/* Overlay */
+.donation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-.our-aim-section {
-  padding: 10px;
+/* Text Content */
+.donation-text {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+  padding-left: 50px;
 }
-.our-aim-title {
-  margin-top: 20px;
+
+.donation-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
+.donation-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
+/* Support Card */
+.support-card {
+  position: absolute;
+  z-index: 2;
+  background-color: #35a085;
+  padding: 20px;
+  border-radius: 0 0px 200px 200px;
+  color: white;
+  text-align: center;
+  max-width: 278px;
+  width: 100%;
+  top: 0;
+  right: 100px;
+  height: 300px;
+}
 
 .support-card h4 {
-  font-size: .9rem;
-  margin-bottom: 0px;
-}
-
-.progress-circle {
-  width: 80px;
-  height: 80px;
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-.support-card {
-  max-width: 238px;
-  width: 71%;
-  right: 75px;
-  height: 246px;
-}
-.donation-text {
-  top: 30%;
-  padding-left: 17px;
-  max-width: 100%;
-}
-.donation-section{
-  height: 600px;
-}
-
-.prayer-times{
-  margin: 20px 0;
-  overflow-x: auto;
-  white-space: nowrap;
-      width: 100%;
-     transform: translate(0);
+/* Progress Circle */
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #D2973B;
+  border-right-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 20px auto;
+  color: white;
 }
 
+/* Donate Button */
+.btn-donate {
+  background-color: #D2973B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-/* Accordion styles for screens below 768px */
+/* Prayer Times Section */
+.prayer-times {
+  width: 60%;
+  transform: translate(0px, 30px);
+  background-color: #D2973B;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.prayer-times .time-item {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.prayer-times .time-item .time {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 80px 0 40px 0;
+  font-size: 0.9rem;
+}
+
+.footer .footer-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer .footer-logo img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.footer .footer-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+.footer h5 {
+  color: #D2973B;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer .footer-links li {
+  list-style-type: disc;
+  font-size: 1rem;
+}
+
+.footer .footer-links {
+  padding-left: 23px;
+}
+
+.footer .footer-links a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer .footer-links a:hover {
+  color: #D2973B;
+}
+
+.footer .social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.footer .social-icons a:hover {
+  color: #D2973B;
+}
+
+.toggle-icon {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .toggle-icon {
+    display: block;
+  }
+
+  .offer-section p {
+    margin: 0 auto 20px auto;
+  }
+
+
+  .intro-section .intro-icon {
+    display: none;
+  }
+
+  .sub-hero-image img {
+    top: 250px;
+    position: absolute;
+    left: 40px;
+    width: 80%;
+  }
+
+  .card-intro {
+    padding: 20px 0;
+  }
+
+  .prayer-name,
+  .prayer-time {
+    padding: 10px 10px;
+  }
+
+  .offer-section .row {
+    padding: 0 40px;
+  }
+
+  .khutba-section {
+    padding: 7px;
+  }
+
+
+  .our-aim-section {
+    padding: 10px;
+  }
+
+  .our-aim-title {
+    margin-top: 20px;
+  }
+
+
+
+  .support-card h4 {
+    font-size: .9rem;
+    margin-bottom: 0px;
+  }
+
+  .progress-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 1.2rem;
+  }
+
+  .support-card {
+    max-width: 238px;
+    width: 71%;
+    right: 75px;
+    height: 246px;
+  }
+
+  .donation-text {
+    top: 30%;
+    padding-left: 17px;
+    max-width: 100%;
+  }
+
+  .donation-section {
+    height: 600px;
+  }
+
+  .prayer-times {
+    margin: 20px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    transform: translate(0);
+  }
+
+
+  /* Accordion styles for screens below 768px */
   .footer-links {
-      display: none; /* Hide lists by default */
+    display: none;
+    /* Hide lists by default */
   }
 
   .footer-heading {
-      cursor: pointer; /* Make headings clickable */
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size:1.5rem;
+    cursor: pointer;
+    /* Make headings clickable */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
   }
 
   .toggle-icon {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10px;
   }
+
   .footer h5 {
     margin: 15px 0;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+
+
+
+
+
+
+
 }
-.footer {
-  padding: 40px 0;
-}
 
 
-
-
-
-
-
-
-      }
-
-
-      /* General styling for the container */
- .pillars-image-container {
+/* General styling for the container */
+.pillars-image-container {
   overflow-x: hidden;
 }
-.pillars-image-subContainer{
+
+.pillars-image-subContainer {
   justify-content: space-between;
 }
 
 /* Scrollable row styling for screens below 768px */
 @media (max-width: 768px) {
-   .pillars-image-subContainer {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      gap: 15px; /* Optional: space between each pillar card */
-      padding: 10px; /* Optional: padding for better aesthetics */
+  .pillars-image-subContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    /* Optional: space between each pillar card */
+    padding: 10px;
+    /* Optional: padding for better aesthetics */
   }
 
   .pillars-card {
     padding: 0 20px;
     min-width: 150px;
     flex: 0 0 auto;
-}
-.offer-section {
-  padding-top: 0;
-}
-
-  /* Optional: hide scrollbar on some browsers */
-   .pillars-image-subContainer::-webkit-scrollbar {
-      display: none;
   }
 
-   .pillars-image-subContainer {
+  .offer-section {
+    padding-top: 0;
+  }
+
+  /* Optional: hide scrollbar on some browsers */
+  .pillars-image-subContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pillars-image-subContainer {
     overflow-x: auto;
   }
 
-  .pillars-card-content{
+  .pillars-card-content {
     height: 400px;
   }
+
   .pillars-image {
     object-fit: cover;
     width: 100%;
     height: 300px;
     border-radius: 100px 0px 100px 0px;
-}
+  }
 
-.btn-watch{
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px 10px 40px;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: white;
-  margin-top: 0px;
-  margin-left: 10px;
-}
+  .btn-watch {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px 10px 40px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 }
 
 
@@ -953,22 +1000,23 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
 /* Responsive Design */
 @media (max-width: 768px) {
   .waqt-row {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .waqt-time {
-      max-width: 100%;
-      margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .waqt-time {
+    flex: 1 1 calc(50% - 20px); /* On mobile, two items per row */
+    max-width: calc(50% - 20px); /* Ensure no item exceeds half the width */
+}
+}
+
   .waqt-title {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .button2 {
-      font-size: 14px;
-      padding: 6px 12px;
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }
 
@@ -1046,18 +1094,18 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
   }
 
   .waqt-next-title {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .waqt-timer {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   #timer {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .waqt-quote {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
