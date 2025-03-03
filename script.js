@@ -1,9 +1,9 @@
 const prayerTimes = [
-    { name: "Fajr", time: "05:00 AM" },
-    { name: "Duhr", time: "12:30 PM" },
-    { name: "Asr", time: "03:45 PM" },
-    { name: "Maghrib", time: "06:15 PM" },
-    { name: "Isha", time: "07:45 PM" }
+    { name: "Fajr", time: "05:30 AM" }, // Example time, adjust as needed
+    { name: "Duhr", time: "01:00 PM" }, // Example time, adjust as needed
+    { name: "Asr", time: "04:30 PM" },  // Example time, adjust as needed
+    { name: "Maghrib", time: "05:45 PM" }, // Example time, adjust as needed
+    { name: "Isha", time: "07:15 PM" }  // Example time, adjust as needed
 ];
 
 // Function to parse time in "HH:MM AM/PM" format into a Date object
