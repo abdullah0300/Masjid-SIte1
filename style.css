@@ -1746,6 +1746,10 @@
 }
 
 @media (max-width: 767px) {
+  .rmdn-minimized {
+    width: 40px;
+    height: 40px;
+  }
   .rmdn-popup {
       width: 85%;
       padding: 15px;
