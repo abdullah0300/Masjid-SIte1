@@ -1,9 +1,9 @@
 const prayerTimes = [
-    { name: "Fajr", time: "04:45 AM" }, // Example time, adjust as needed
+    { name: "Fajr", time: "04:00 AM" }, // Example time, adjust as needed
     { name: "Duhr", time: "01:30 PM" }, // Example time, adjust as needed
-    { name: "Asr", time: "07:30 PM" },  // Example time, adjust as needed
-    { name: "Maghrib", time: "8:51 PM" }, // Example time, adjust as needed
-    { name: "Isha", time: "10:15 PM" }  // Example time, adjust as needed
+    { name: "Asr", time: "07:00 PM" },  // Example time, adjust as needed
+    { name: "Maghrib", time: "9:39 PM" }, // Example time, adjust as needed
+    { name: "Isha", time: "10:55 PM" }  // Example time, adjust as needed
 ];
 
 // Function to parse time in "HH:MM AM/PM" format into a Date object
@@ -58,36 +58,37 @@ updatePrayerTimer();
 
 
 const prayerTimes2 = {
-    "2025-06-01": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:27 PM", "isha": "10:40 PM" },
-    "2025-06-02": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:28 PM", "isha": "10:40 PM" },
-    "2025-06-03": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:29 PM", "isha": "" },
-    "2025-06-04": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:30 PM", "isha": "" },
-    "2025-06-05": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:31 PM", "isha": "" },
-    "2025-06-06": { "fajr": "04:00 AM", "zuhr": "01:30 PM", "asr": "07:30 PM", "maghrib": "09:32 PM", "isha": "10:50 PM" },
-    "2025-06-07": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:33 PM", "isha": "" },
-    "2025-06-08": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:34 PM", "isha": "" },
-    "2025-06-09": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:35 PM", "isha": "" },
-    "2025-06-10": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:36 PM", "isha": "" },
-    "2025-06-11": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:37 PM", "isha": "" },
-    "2025-06-12": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:38 PM", "isha": "" },
-    "2025-06-13": { "fajr": "04:00 AM", "zuhr": "01:30 PM", "asr": "07:30 PM", "maghrib": "09:39 PM", "isha": "10:50 PM" },
-    "2025-06-14": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:40 PM", "isha": "" },
-    "2025-06-15": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:41 PM", "isha": "" },
-    "2025-06-16": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:42 PM", "isha": "" },
-    "2025-06-17": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:43 PM", "isha": "" },
-    "2025-06-18": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:44 PM", "isha": "" },
-    "2025-06-19": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:45 PM", "isha": "" },
-    "2025-06-20": { "fajr": "04:00 AM", "zuhr": "01:30 PM", "asr": "07:30 PM", "maghrib": "09:46 PM", "isha": "10:50 PM" },
-    "2025-06-21": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:47 PM", "isha": "" },
-    "2025-06-22": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:48 PM", "isha": "" },
-    "2025-06-23": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:49 PM", "isha": "" },
-    "2025-06-24": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:50 PM", "isha": "" },
-    "2025-06-25": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:51 PM", "isha": "" },
-    "2025-06-26": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:52 PM", "isha": "" },
-    "2025-06-27": { "fajr": "04:00 AM", "zuhr": "01:30 PM", "asr": "07:30 PM", "maghrib": "09:53 PM", "isha": "10:50 PM" },
-    "2025-06-28": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:54 PM", "isha": "" },
-    "2025-06-29": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:55 PM", "isha": "" },
-    "2025-06-30": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:56 PM", "isha": "" }
+    "2025-07-01": { "fajr": "04:00 AM", "zuhr": "01:30 PM", "asr": "07:00 PM", "maghrib": "09:39 PM", "isha": "10:45 PM" },
+    "2025-07-02": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:39 PM", "isha": "" },
+    "2025-07-03": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:38 PM", "isha": "" },
+    "2025-07-04": { "fajr": "04:00 AM", "zuhr": "01:30 PM", "asr": "07:00 PM", "maghrib": "09:38 PM", "isha": "10:45 PM" },
+    "2025-07-05": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:37 PM", "isha": "" },
+    "2025-07-06": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:37 PM", "isha": "" },
+    "2025-07-07": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:36 PM", "isha": "" },
+    "2025-07-08": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:35 PM", "isha": "" },
+    "2025-07-09": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:35 PM", "isha": "" },
+    "2025-07-10": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:34 PM", "isha": "" },
+    "2025-07-11": { "fajr": "04:15 AM", "zuhr": "01:30 PM", "asr": "07:00 PM", "maghrib": "09:33 PM", "isha": "10:45 PM" },
+    "2025-07-12": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:32 PM", "isha": "" },
+    "2025-07-13": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:31 PM", "isha": "" },
+    "2025-07-14": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:30 PM", "isha": "" },
+    "2025-07-15": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:29 PM", "isha": "" },
+    "2025-07-16": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:28 PM", "isha": "" },
+    "2025-07-17": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:26 PM", "isha": "" },
+    "2025-07-18": { "fajr": "04:30 AM", "zuhr": "01:30 PM", "asr": "07:00 PM", "maghrib": "09:25 PM", "isha": "10:30 PM" },
+    "2025-07-19": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:24 PM", "isha": "" },
+    "2025-07-20": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:23 PM", "isha": "" },
+    "2025-07-21": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:21 PM", "isha": "" },
+    "2025-07-22": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:20 PM", "isha": "" },
+    "2025-07-23": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:19 PM", "isha": "" },
+    "2025-07-24": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:17 PM", "isha": "" },
+    "2025-07-25": { "fajr": "04:30 AM", "zuhr": "01:30 PM", "asr": "07:00 PM", "maghrib": "09:16 PM", "isha": "10:30 PM" },
+    "2025-07-26": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:14 PM", "isha": "" },
+    "2025-07-27": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:13 PM", "isha": "" },
+    "2025-07-28": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:11 PM", "isha": "" },
+    "2025-07-29": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:09 PM", "isha": "" },
+    "2025-07-30": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:08 PM", "isha": "" },
+    "2025-07-31": { "fajr": "", "zuhr": "", "asr": "", "maghrib": "09:06 PM", "isha": "" }
 };
    
 function getWeeklyPrayerTime(prayer) {
