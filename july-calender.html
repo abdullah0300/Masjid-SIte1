@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Darul Arqam Trust | Masjid in New Normanton Derby
+    </title>
+    <link rel="icon" type="image/x-icon" href="media/darulqaram-logo.png ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Learn more about Darul Arqam Trust, a mosque dedicated to serving the New Normanton community in Derby. Our mission is to promote Islamic education, spiritual growth, and community outreach 
+        ">
+
+
+</head>
+
+<body>
+
+    <div class="announcement-bar py-2">
+        <div
+            class="container d-flex flex-column flex-md-row justify-content-between align-items-center announcement-content">
+            <div class="d-flex align-items-center mb-2 mb-md-0">
+                <a style="text-decoration: none; color: white;" href="mailto:info@darularqam.co.uk"> <span
+                        class="mr-3"><i class="fas fa-envelope"></i> info@darularqam.co.uk</span></a>
+                </a>
+                <a style="text-decoration: none; color: white;" href="https://maps.app.goo.gl/sjhc9sTqdKdWeHtAA"><span
+                        class="mr-3"><i class="fas fa-map-marker-alt"></i> 143 Clarence Road Derby DE23 6LS</span></a>
+
+            </div>
+            <div class="d-flex align-items-center mb-2 mb-md-0">
+                <span class="mr-3" style="
+            display: flex;
+            align-items: center;
+        "><img src="./media/fajr.png" alt="Fajr" style="width:25px; height:25px; margin-right: 5px">Sunrise At: 6:53
+                    am</span>
+                <span class="mr-3" style="
+            display: flex;
+            align-items: center;
+        "><img src="./media/moon (1).png" alt="Fajr" style="margin-right: 5px;width: 15px;height: 15px;"> Sunset At: _
+                    <span data-prayer="maghrib"> </span></span>
+                <a style="text-decoration: none; color: white;" href="tel:07737893562"><i class="fas fa-phone"></i>
+                    07737893562</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="media/footer-logo.png" alt="Website Logo" style="height: 50px;">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prayertimes.html">Prayer Timetable</a></li>
+                    <li class="nav-item"><a class="nav-link" href="may-calender.html">June Timetable</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="madrassah.html">Madrassah</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning text-white ml-lg-3 my-2 my-lg-0" href="#">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="" style="
+        background-image: url('./media/masjid.jpg'); /* Replace with actual file name */
+        background-size: cover;
+    background-position: center;
+    height: 116px; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;">
+        <div class="">
+            <!-- <img src="./media/hero-sub.png" alt="Description of Image" class="hero-image"> -->
+            <!-- <h2>“TURN TO ALLAH BEFORE YOU RETURN TO ALLAH.”</h2>
+            <p>The Heart That Beats For Allah Is Always A Stranger Among The Hearts That Beat For The Dunya (World).</p>
+            <a href="#" class="btn btn-warning text-white">Donate</a> -->
+        </div>
+    </section>
+    <!-- Floating Icon for Next Namaz -->
+    <div class="floating-icon">
+        <div id="prayer-time">
+            <img src="./media/praying.png" alt="Namaz Icon" style="height: 20px;" />
+            <span id="namaz-name">Fajr</span>: <span id="remaining-time">00:00</span>
+        </div>
+    </div>
+
+
+   <section class="prayer-timetable-section">
+    <style>
+        .prayer-timetable-section * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .download-button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            background-color: #1a8754;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #135e3a;
+        }
+
+        .download-button:active {
+            transform: translateY(1px);
+        }
+
+        .prayer-timetable-section {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        .timetable-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .timetable-header h1 {
+            color: #1a8754;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .timetable-header .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 3px;
+        }
+
+        .timetable-header .address {
+            font-size: 0.9rem;
+            margin-bottom: 2px;
+        }
+
+        .month-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 5px 20px;
+        }
+
+        .month-info .left {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .month-info .right {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .prayer-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+            margin-bottom: 15px;
+        }
+
+        .prayer-table th,
+        .prayer-table td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .prayer-table thead tr:first-child th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            padding: 6px 4px;
+        }
+
+        .prayer-table thead tr:nth-child(2) th {
+            background-color: #f0f0f0;
+            font-size: 0.8rem;
+        }
+
+        .prayer-table tbody tr {
+            height: 28px;
+        }
+
+        .prayer-table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .day-column {
+            background-color: #e8f4ff;
+            font-weight: bold;
+        }
+
+        .friday-row {
+            background-color: #e8f4ff;
+        }
+
+        .highlighted-time {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+
+        .footer-sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .footer-box {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .footer-box h3 {
+            text-align: center;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+            text-decoration: underline;
+        }
+
+        .footer-box p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        .facebook-box {
+            background-color: #f0f8ff;
+        }
+
+        .facebook-box .fb-name {
+            color: #1a8754;
+            font-weight: bold;
+        }
+
+        .bank-box {
+            background-color: #f5f5f5;
+        }
+
+        .support-box {
+            background-color: #fff8e8;
+        }
+
+        .jumuah-box {
+            background-color: #f0f0f0;
+        }
+
+        .jumuah-times {
+            font-weight: bold;
+        }
+
+        .jumuah-times .time {
+            color: #0066cc;
+        }
+
+        @media print {
+            .prayer-timetable-section {
+                border: 3px solid black;
+            }
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .prayer-timetable-section {
+                padding: 5px;
+                border-width: 2px;
+            }
+
+            .timetable-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .timetable-header .subtitle {
+                font-size: 1rem;
+            }
+
+            .timetable-header .address {
+                font-size: 0.8rem;
+            }
+
+            .month-info {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                padding: 5px 10px;
+            }
+
+            .month-info .left,
+            .month-info .right {
+                font-size: 1.2rem;
+            }
+
+            .prayer-table {
+                font-size: 0.7rem;
+            }
+
+            .prayer-table th,
+            .prayer-table td {
+                padding: 2px;
+                font-size: 0.65rem;
+            }
+
+            .footer-sections {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .download-button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            /* Hide AH column on very small screens */
+            .prayer-table th:nth-child(3),
+            .prayer-table td:nth-child(3) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .prayer-timetable-section {
+                padding: 3px;
+                margin: 0;
+            }
+
+            .timetable-header h1 {
+                font-size: 1.4rem;
+            }
+
+            .prayer-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .prayer-table th,
+            .prayer-table td {
+                font-size: 0.6rem;
+                padding: 1px;
+            }
+
+            /* Make the table scrollable horizontally */
+            .table-wrapper {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -5px;
+            }
+
+            .footer-box {
+                padding: 8px;
+            }
+
+            .footer-box h3 {
+                font-size: 1rem;
+            }
+
+            .footer-box p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    <div class="download-button-container">
+        <button class="download-button" onclick="downloadCalendarImage()">Download Calendar</button>
+    </div>
+
+    <div class="timetable-header">
+        <h1>MASJID DARUL ARQAM</h1>
+        <div class="subtitle"><strong>AHLE SUNNAH WAL JAMA'AT</strong></div>
+        <div class="address">143 CLARENCE ROAD DERBY DE23 6LS</div>
+        <div class="address"><strong>TEL: 07737893562</strong></div>
+    </div>
+
+    <div class="month-info">
+        <div class="left">JULY<br>2025</div>
+        <div class="right">Muharram - Safar<br>1447 A.H.</div>
+    </div>
+
+    <div class="table-wrapper">
+    <table class="prayer-table">
+        <thead>
+            <tr>
+                <th rowspan="2">DAY</th>
+                <th rowspan="2">JULY</th>
+                <th rowspan="2">AH<br>هجري</th>
+                <th colspan="3">FAJAR</th>
+                <th colspan="2">ZOHAR</th>
+                <th colspan="2">ASR</th>
+                <th>MAGRIB</th>
+                <th colspan="2">ISHA</th>
+            </tr>
+            <tr>
+                <th>S'Sadiq</th>
+                <th>Jamat</th>
+                <th>Sunrise</th>
+                <th>Begins</th>
+                <th>Jamat</th>
+                <th>Begins</th>
+                <th>Jamat</th>
+                <th>Azaan</th>
+                <th>Begins</th>
+                <th>Jamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day-column">TUE</td>
+                <td>1</td>
+                <td>6</td>
+                <td>02:46</td>
+                <td>04:00</td>
+                <td>04:45</td>
+                <td>01:17</td>
+                <td>01:30</td>
+                <td>06:50</td>
+                <td>07:00</td>
+                <td class="highlighted-time">09:39</td>
+                <td>10:39</td>
+                <td>10:45</td>
+            </tr>
+            <tr>
+                <td class="day-column">WED</td>
+                <td>2</td>
+                <td>7</td>
+                <td>02:48</td>
+                <td></td>
+                <td>04:46</td>
+                <td>01:17</td>
+                <td></td>
+                <td>06:49</td>
+                <td></td>
+                <td class="highlighted-time">09:39</td>
+                <td>10:39</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">THU</td>
+                <td>3</td>
+                <td>8</td>
+                <td>02:49</td>
+                <td></td>
+                <td>04:47</td>
+                <td>01:17</td>
+                <td></td>
+                <td>06:49</td>
+                <td></td>
+                <td class="highlighted-time">09:38</td>
+                <td>10:38</td>
+                <td></td>
+            </tr>
+            <tr class="friday-row">
+                <td class="day-column">FRI</td>
+                <td>4</td>
+                <td>9</td>
+                <td>02:50</td>
+                <td>04:00</td>
+                <td>04:47</td>
+                <td>01:17</td>
+                <td>01:30</td>
+                <td>06:49</td>
+                <td>07:00</td>
+                <td class="highlighted-time">09:38</td>
+                <td>10:38</td>
+                <td>10:45</td>
+            </tr>
+            <tr>
+                <td class="day-column">SAT</td>
+                <td>5</td>
+                <td>10</td>
+                <td>02:51</td>
+                <td></td>
+                <td>04:48</td>
+                <td>01:18</td>
+                <td></td>
+                <td>06:49</td>
+                <td></td>
+                <td class="highlighted-time">09:37</td>
+                <td>10:37</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">SUN</td>
+                <td>6</td>
+                <td>11</td>
+                <td>02:52</td>
+                <td></td>
+                <td>04:49</td>
+                <td>01:18</td>
+                <td></td>
+                <td>06:49</td>
+                <td></td>
+                <td class="highlighted-time">09:37</td>
+                <td>10:37</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">MON</td>
+                <td>7</td>
+                <td>12</td>
+                <td>02:54</td>
+                <td></td>
+                <td>04:50</td>
+                <td>01:18</td>
+                <td></td>
+                <td>06:48</td>
+                <td></td>
+                <td class="highlighted-time">09:36</td>
+                <td>10:36</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">TUE</td>
+                <td>8</td>
+                <td>13</td>
+                <td>02:55</td>
+                <td></td>
+                <td>04:51</td>
+                <td>01:18</td>
+                <td></td>
+                <td>06:48</td>
+                <td></td>
+                <td class="highlighted-time">09:35</td>
+                <td>10:35</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">WED</td>
+                <td>9</td>
+                <td>14</td>
+                <td>02:57</td>
+                <td></td>
+                <td>04:52</td>
+                <td>01:18</td>
+                <td></td>
+                <td>06:48</td>
+                <td></td>
+                <td class="highlighted-time">09:35</td>
+                <td>10:35</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">THU</td>
+                <td>10</td>
+                <td>15</td>
+                <td>02:58</td>
+                <td></td>
+                <td>04:53</td>
+                <td>01:18</td>
+                <td></td>
+                <td>06:47</td>
+                <td></td>
+                <td class="highlighted-time">09:34</td>
+                <td>10:34</td>
+                <td></td>
+            </tr>
+            <tr class="friday-row">
+                <td class="day-column">FRI</td>
+                <td>11</td>
+                <td>16</td>
+                <td>03:00</td>
+                <td>04:15</td>
+                <td>04:55</td>
+                <td>01:19</td>
+                <td>01:30</td>
+                <td>06:47</td>
+                <td>07:00</td>
+                <td class="highlighted-time">09:33</td>
+                <td>10:33</td>
+                <td>10:45</td>
+            </tr>
+            <tr>
+                <td class="day-column">SAT</td>
+                <td>12</td>
+                <td>17</td>
+                <td>03:02</td>
+                <td></td>
+                <td>04:56</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:47</td>
+                <td></td>
+                <td class="highlighted-time">09:32</td>
+                <td>10:32</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">SUN</td>
+                <td>13</td>
+                <td>18</td>
+                <td>03:03</td>
+                <td></td>
+                <td>04:57</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:46</td>
+                <td></td>
+                <td class="highlighted-time">09:31</td>
+                <td>10:31</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">MON</td>
+                <td>14</td>
+                <td>19</td>
+                <td>03:05</td>
+                <td></td>
+                <td>04:58</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:46</td>
+                <td></td>
+                <td class="highlighted-time">09:30</td>
+                <td>10:30</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">TUE</td>
+                <td>15</td>
+                <td>20</td>
+                <td>03:06</td>
+                <td></td>
+                <td>04:59</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:45</td>
+                <td></td>
+                <td class="highlighted-time">09:29</td>
+                <td>10:29</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">WED</td>
+                <td>16</td>
+                <td>21</td>
+                <td>03:08</td>
+                <td></td>
+                <td>05:01</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:45</td>
+                <td></td>
+                <td class="highlighted-time">09:28</td>
+                <td>10:28</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">THU</td>
+                <td>17</td>
+                <td>22</td>
+                <td>03:10</td>
+                <td></td>
+                <td>05:02</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:44</td>
+                <td></td>
+                <td class="highlighted-time">09:26</td>
+                <td>10:26</td>
+                <td></td>
+            </tr>
+            <tr class="friday-row">
+                <td class="day-column">FRI</td>
+                <td>18</td>
+                <td>23</td>
+                <td>03:11</td>
+                <td>04:30</td>
+                <td>05:03</td>
+                <td>01:19</td>
+                <td>01:30</td>
+                <td>06:43</td>
+                <td>07:00</td>
+                <td class="highlighted-time">09:25</td>
+                <td>10:25</td>
+                <td>10:30</td>
+            </tr>
+            <tr>
+                <td class="day-column">SAT</td>
+                <td>19</td>
+                <td>24</td>
+                <td>03:14</td>
+                <td></td>
+                <td>05:05</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:43</td>
+                <td></td>
+                <td class="highlighted-time">09:24</td>
+                <td>10:24</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">SUN</td>
+                <td>20</td>
+                <td>25</td>
+                <td>03:15</td>
+                <td></td>
+                <td>05:06</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:42</td>
+                <td></td>
+                <td class="highlighted-time">09:23</td>
+                <td>10:23</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">MON</td>
+                <td>21</td>
+                <td>26</td>
+                <td>03:16</td>
+                <td></td>
+                <td>05:07</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:41</td>
+                <td></td>
+                <td class="highlighted-time">09:21</td>
+                <td>10:21</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">TUE</td>
+                <td>22</td>
+                <td>27</td>
+                <td>03:19</td>
+                <td></td>
+                <td>05:09</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:40</td>
+                <td></td>
+                <td class="highlighted-time">09:20</td>
+                <td>10:20</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">WED</td>
+                <td>23</td>
+                <td>28</td>
+                <td>03:20</td>
+                <td></td>
+                <td>05:10</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:40</td>
+                <td></td>
+                <td class="highlighted-time">09:19</td>
+                <td>10:19</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">THU</td>
+                <td>24</td>
+                <td>29</td>
+                <td>03:23</td>
+                <td></td>
+                <td>05:12</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:39</td>
+                <td></td>
+                <td class="highlighted-time">09:17</td>
+                <td>10:17</td>
+                <td></td>
+            </tr>
+            <tr class="friday-row">
+                <td class="day-column">FRI</td>
+                <td>25</td>
+                <td>30</td>
+                <td>03:24</td>
+                <td>04:30</td>
+                <td>05:13</td>
+                <td>01:08</td>
+                <td>01:30</td>
+                <td>06:38</td>
+                <td>07:00</td>
+                <td class="highlighted-time">09:16</td>
+                <td>10:16</td>
+                <td>10:30</td>
+            </tr>
+            <tr>
+                <td class="day-column">SAT</td>
+                <td>26</td>
+                <td>1</td>
+                <td>03:27</td>
+                <td></td>
+                <td>05:15</td>
+                <td>01:08</td>
+                <td></td>
+                <td>06:37</td>
+                <td></td>
+                <td class="highlighted-time">09:14</td>
+                <td>10:14</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">SUN</td>
+                <td>27</td>
+                <td>2</td>
+                <td>03:28</td>
+                <td></td>
+                <td>05:16</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:36</td>
+                <td></td>
+                <td class="highlighted-time">09:13</td>
+                <td>10:13</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">MON</td>
+                <td>28</td>
+                <td>3</td>
+                <td>03:31</td>
+                <td></td>
+                <td>05:18</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:35</td>
+                <td></td>
+                <td class="highlighted-time">09:11</td>
+                <td>10:11</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">TUE</td>
+                <td>29</td>
+                <td>4</td>
+                <td>03:33</td>
+                <td></td>
+                <td>05:20</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:34</td>
+                <td></td>
+                <td class="highlighted-time">09:09</td>
+                <td>10:09</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">WED</td>
+                <td>30</td>
+                <td>5</td>
+                <td>03:35</td>
+                <td></td>
+                <td>05:21</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:33</td>
+                <td></td>
+                <td class="highlighted-time">09:08</td>
+                <td>10:08</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="day-column">THU</td>
+                <td>31</td>
+                <td>6</td>
+                <td>03:37</td>
+                <td></td>
+                <td>05:23</td>
+                <td>01:19</td>
+                <td></td>
+                <td>06:32</td>
+                <td></td>
+                <td class="highlighted-time">09:06</td>
+                <td>10:06</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div class="footer-sections">
+        <div class="footer-box facebook-box">
+            <h3>FOLLOW US ON FACEBOOK</h3>
+            <p>PLEASE TYPE <span class="fb-name">"DARUL ARQAM TRUST DERBY"</span> in FACEBOOK search box for masjid news, updates, timetables, etc.</p>
+            <p style="font-style: italic; color: #666; margin-top: 10px;">If you have any queries please contact us via our Masjid Facebook Page.</p>
+        </div>
+
+        <div class="footer-box bank-box">
+            <h3>BANK ACCOUNT DETAILS</h3>
+            <p><strong>Bank Name:</strong> LLOYDS BANK</p>
+            <p><strong>Account Name:</strong> DARUL ARQAM</p>
+            <p><strong>Sort Code:</strong> 30-92-59</p>
+            <p><strong>Account No:</strong> 03635959</p>
+        </div>
+    </div>
+
+    <div class="footer-sections">
+        <div class="footer-box support-box">
+            <h3>PLEASE SUPPORT THE MASJID</h3>
+            <p>Please donate generously to the masjid to help pay for the ever increasing running costs. Making regular donations via bank transfer is the best way to do this.</p>
+        </div>
+
+        <div class="footer-box jumuah-box">
+            <h3>JUMU'AH (3 Jamats)</h3>
+            <p class="jumuah-times">1st JUMUAH - BAYAAN - <span class="time">1:00PM</span><br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KHUTBAH - <span class="time">1:30PM</span></p>
+            <p class="jumuah-times">2nd JUMUAH - KHUTBAH - <span class="time">2:30PM</span></p>
+            <p class="jumuah-times">3rd JUMUAH - KHUTBAH - <span class="time">4:00PM</span></p>
+        </div>
+    </div>
+
+    <script>
+        function downloadCalendarImage() {
+            // Create a link element
+            const link = document.createElement('a');
+            
+            // Set the href to your calendar image
+            // IMPORTANT: Replace 'prayer-timetable-july-2025.jpg' with your actual image filename
+            link.href = './media/Julytimetable .jpg';
+            
+            // Set the download filename
+            link.download = 'Masjid_Darul_Arqam_Prayer_Timetable_July_2025.jpg';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</section>
+
+
+    <!-- section 7th -->
+
+    <div class="donation-section">
+        <!-- Overlay -->
+        <div class="donation-overlay"></div>
+
+        <!-- Left Side: Text Content -->
+        <div class="donation-text">
+            <h2>Help towards the running of the Mosque and Madrasah</h2>
+            <p>Uthman ibn Affan (ra) reported: The Messenger of Allah, Peace and Blessings be upon him, said, "Whoever
+                builds a mosque for Allah, then Allah will build for him a house like it in Paradise" (Bukhari)</p>
+        </div>
+
+        <!-- Right Side: Support Card -->
+        <div class="support-card">
+            <h4>Support Us, we need your help</h4>
+            <div class="progress-circle">
+                30%
+            </div>
+            <a style="text-decoration: none; color: white;" href="#" class="btn-donate">Donate Now</a>
+        </div>
+    </div>
+
+    <!-- footer top -->
+
+
+    <!-- Prayer Times Section -->
+    <div class="container prayer-times">
+        <div class="time-item">
+            Fajar
+            <span class="time" data-prayer="fajr">--:--</span>
+        </div>
+        <div class="time-item">
+            Dhur
+            <span class="time" data-prayer="zuhr">--:--</span>
+        </div>
+        <div class="time-item">
+            Asar
+            <span class="time" data-prayer="asr">--:--</span>
+        </div>
+        <div class="time-item">
+            Magrib
+            <span class="time" data-prayer="maghrib">--:--</span>
+        </div>
+        <div class="time-item">
+            Isha
+            <span class="time" data-prayer="isha">--:--</span>
+        </div>
+
+    </div>
+
+    <!-- footer section -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and About -->
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="./media/footer-logo.png" alt="Logo"> <!-- Replace with actual logo path -->
+                    </div>
+                    <p class="footer-text">Darul Arqam, founded in 2005 in Derby, offers Quran and Hadith education
+                        following the Hanafi tradition, promoting accessible Islamic learning for the community.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/darularqamderby/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@masjiddarularqam?is_from_webapp=1&sender_device=pc"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/c/DarulArqamTrustDerby"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-4 footer-section">
+                    <h5 class="footer-heading">Services <span class="toggle-icon">+</span></h5>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Counseling</a></li>
+                        <li><a href="contact.html">Quran Class</a></li>
+                        <li><a href="contact.html">Congregational Prayer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 footer-section">
+                    <h5 class="footer-heading">Quick Links <span class="toggle-icon">+</span></h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="prayertimes.html">Prayer Timetable</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="madrassah.html">Madrasah</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <h5 style="font-size: medium; text-align: center; color: white;margin-bottom: -30px;font-weight: lighter;">
+                Designed By<span><a href="https://www.webcraftio.com/" style="text-decoration: none;color: white;">
+                        WebCraftio</a></span></h5>
+        </div>
+    </footer>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const headings = document.querySelectorAll(".footer-heading");
+
+            headings.forEach((heading) => {
+                heading.addEventListener("click", function () {
+                    const links = heading.nextElementSibling; // The <ul> element
+                    const icon = heading.querySelector(".toggle-icon");
+
+                    // Toggle the display of the links
+                    if (links.style.display === "none" || links.style.display === "") {
+                        links.style.display = "block";
+                        icon.textContent = "-"; // Change icon to minus
+                    } else {
+                        links.style.display = "none";
+                        icon.textContent = "+"; // Change icon to plus
+                    }
+                });
+            });
+        });
+
+
+    </script>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
